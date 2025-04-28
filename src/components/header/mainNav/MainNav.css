@@ -1,0 +1,139 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin: 18px 48px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+
+    .logo {
+        width: 212px;
+        height: 70px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        background-color: var(--orange);
+        color: var(--border-color);
+        font-weight: 500;
+        padding: 18px 20px;
+        border-right: 2px solid var(--border-color);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    ul.mainUl {
+        display: flex;
+        align-items: center;
+
+
+        li {
+            padding: 24px 20px;
+            border-left: 2px solid var(--border-color) !important;
+            cursor: pointer;
+            transition: var(--transition);
+
+            a {
+                color: var(--border-color);
+                font-weight: 500;
+
+            }
+        }
+
+        li.active {
+            background-color: var(--active-color);
+        }
+
+        li:hover {
+            background-color: var(--active-color)
+        }
+
+        li:last-child {
+            background: var(--weak-orange);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+    }
+
+    ul.burgerIcon li {
+        padding: 24px 30px;
+        border-left: 2px solid var(--border-color);
+        background-color: var(--active-color);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    .list {
+        position: fixed;
+        z-index: 1000;
+        right: 40px;
+        bottom: 82px;
+        background-color: #ffefe5f2;
+        padding: 12px 18px;
+        border-radius: 8px;
+    }
+
+    ul.exList {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    li {
+        padding: 18px 12px;
+        border-bottom: 2px solid #ffdecc7a;
+        border-left: none !important;
+        transition: var(--transition);
+
+        a {
+            color: var(--border-color);
+        }
+    }
+
+    li:hover {
+        background-color: var(--active-color) !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    ul.mainUl {
+        display: none !important;
+    }
+
+    .burgerIcon {
+        display: flex !important;
+    }
+
+    .list {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .burgerIcon {
+        display: none
+    }
+
+    .list {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 390px) {
+    nav .logo {
+        width: 140px;
+        font-size: 12px;
+        width: 165px;
+    }
+
+}
+
+@media screen and (max-width : 425px) {
+    nav .logo {
+        width: 154px;
+    }
+
+}
