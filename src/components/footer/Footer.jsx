@@ -4,17 +4,18 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook , FaTwitter } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
-const Footer = ({ logo, logoText }) => {
+import logo from "/assets/shape-14.svg"
+const Footer = () => {
   return (
     <footer id="contact">
       <div className="footerHead">
         <div className="content">
           <div className="logo">
             <div className="imgLogo">
-              <img src="/assets/shape-14.svg" alt="logo" />
+              <img src={logo} alt="logo" />
               <h3>Little Learners</h3>
             </div>
-            <p>
+            <p className="myTitle">
               We believe in the power of play to foster creativity,
               problem-solving skills, and imagination.
             </p>

@@ -1,12 +1,12 @@
 .mainHeading {
     text-align: center;
     width: 62%;
-    margin: 150px auto 80px;
+    margin: 200px auto 135px;
 
     .firstPgf {
         border: 2px solid;
         border-radius: 6px;
-        width: 252px;
+        width: 287px;
         padding: 8px 14px;
         margin: 10px auto;
         display: flex;
@@ -22,7 +22,7 @@
 
     h1 {
         margin: 19px auto;
-        font-size: 48px;
+        font-size: 58px;
         color: #1A1A1A;
 
     }
@@ -30,6 +30,7 @@
     p {
         line-height: 1.5;
         color: #333333;
+        font-size: 20px;
     }
 
 }
@@ -47,7 +48,25 @@
     }
 
     .mainHeading h1 {
-        font-size: 38px;
+        font-size: 38px !important;
     }
 
+}
+
+@media screen and (max-width:1919px) {
+    .mainHeading {
+        margin: 150px auto 80px;
+        .firstPgf {
+            width: 252px;
+            padding: 8px 14px;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
 }

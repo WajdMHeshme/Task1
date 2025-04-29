@@ -1,13 +1,14 @@
 import React from 'react'
 import '../../index.css'
 import './Hero.css'
+import heroImage from '/assets/Image Container.png';
 const Hero = ({title , headingInf , textInnerHeading, mainP , num1 , num2 , num3 , p1 , p2 , p3}) => {
   return (
 <section id='hero'>
 <div className="container">
     <div data-aos="zoom-in" className="content">
         <div className="img">
-            <img src="/assets/Image Container.png" alt="" />
+            <img src = {heroImage} alt="" />
         </div>
         <div className="textContent">
             <p className='title'>{title}</p>

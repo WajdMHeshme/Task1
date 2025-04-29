@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Slider.css';
 import { TestimonialsData } from '../../../Data';
-import { FaArrowLeft , FaArrowRight } from "react-icons/fa6";
+import leftArrow from "/assets/leftArrow.svg";
+import rightArrow from "/assets/rightArrow.svg";
 import { TiStarFullOutline } from "react-icons/ti";
 
-const TestimonialSlider = () => {
+function TestimonialSlider() {
   const [current, setCurrent] = useState(0);
   const total = TestimonialsData.length;
 
@@ -14,7 +15,7 @@ const TestimonialSlider = () => {
   return (
     <div className="slider">
       <div
-      data-aos="fade-right" 
+        data-aos="fade-right"
         className="slides"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
@@ -26,7 +27,7 @@ const TestimonialSlider = () => {
               <div style={{
                 margin: "30px auto"
               }}>
-                {Array.from({ length: item.rating }).map((_, i) => <span className='star' key={i} style={{color: "var(--orange)"}}><TiStarFullOutline /></span>)}
+                {Array.from({ length: item.rating }).map((_, i) => <span className='star' key={i} style={{ color: "var(--orange)" }}><TiStarFullOutline /></span>)}
               </div>
               <p className="testimonial-text">{item.text}</p>
             </div>
@@ -34,12 +35,12 @@ const TestimonialSlider = () => {
         ))}
       </div>
       <div className="btns">
-      <button className="arrow left" onClick={prevSlide}><img src="/assets/leftArrow.svg" alt="leftArrow" /></button>
-      <button className="arrow right" onClick={nextSlide}><img src="/assets/rightArrow.svg" alt="rightArrow" /></button>
+        <button className="arrow left" onClick={prevSlide}><img src={leftArrow} alt="leftArrow" /></button>
+        <button className="arrow right" onClick={nextSlide}><img src={rightArrow} alt="rightArrow" /></button>
       </div>
 
     </div>
   );
-};
+}
 
 export default TestimonialSlider;

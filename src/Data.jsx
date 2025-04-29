@@ -3,6 +3,10 @@ import { FaCrown } from "react-icons/fa";
 import { IoIosFootball } from "react-icons/io";
 import { RiParentFill } from "react-icons/ri";
 import { CgMathPlus, CgMathMinus } from "react-icons/cg";
+import jennefer from '/assets/Profile Container.svg';
+import David from "/assets/Profile Container (1).svg"
+import Emily from "/assets/Profile Container (2).svg"
+import line from "/assets/dollet line.png"
 
 export const navData = [
   {
@@ -74,20 +78,20 @@ export const CardData = [
 export const TestimonialsData = [
   {
     name: "Jennifer B",
-    avatar: "/assets/Profile Container.svg",
+    avatar: jennefer,
     rating: 5,
     text: "Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!",
   },
 
   {
     name: "David K",
-    avatar: "/assets/Profile Container (1).svg",
+    avatar: David,
     rating: 5,
     text: "Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment.",
   },
   {
     name: "Emily L",
-    avatar: "/assets/Profile Container (2).svg",
+    avatar: Emily,
     rating: 5,
     text: "My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.",
   },
@@ -148,7 +152,7 @@ export const AccordionData = [
 export const CardInfoData = [
   {
     heading: "About Us",
-    line: "/assets/dollet line.png",
+    line: line,
     paragraph:
       "Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.",
     btnText: "Learn More",
@@ -156,7 +160,7 @@ export const CardInfoData = [
   },
   {
     heading: "Academics",
-    line: "/assets/dollet line.png",
+    line: line,
     paragraph:
       "Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.",
     btnText: "Learn More",
@@ -164,7 +168,7 @@ export const CardInfoData = [
   },
   {
     heading: "Student Life",
-    line: "/assets/dollet line.png",
+    line: line,
     paragraph:
       "Peek into the vibrant and enriching world of Student Life at Little Learners Academy. Discover the array of extracurricular activities, arts and crafts, sports, and social events that make our school experience truly memorable.",
     btnText: "Learn More",
@@ -172,48 +176,11 @@ export const CardInfoData = [
   },
   {
     heading: "Admissions",
-    line: "/assets/dollet line.png",
+    line: line,
     paragraph:
       "Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.",
     btnText: "Learn More",
     arrow: <FaArrowRight />,
-  },
-];
-
-export const FooterData = [
-  {
-    logo: "/assets/shape-14.svg",
-    logoText:
-      "We believe in the power of play to foster creativity, problem-solving skills, and imagination.",
-  },
-];
-export const FooterDatalist = [
-  {
-    list: "Features",
-    list: "Our Testimonials",
-    list: "FAQ",
-  },
-];
-
-export const FooterDatalist1 = [
-  {
-    list: "Our Mission",
-    list: "Awards and Recognitions",
-    list: "History",
-    list: "Teachers",
-  },
-];
-export const FooterDatalist2 = [
-  {
-    list: "Special Features",
-    list: "Gallery",
-  },
-];
-
-export const FooterDatalist3 = [
-  {
-    list: "Information",
-    list: "Map & Direction",
   },
 ];
 
@@ -231,18 +198,3 @@ export const FooterDatalist3 = [
 //   list: "Information",
 //   list: "Map & Direction",
 // }
-
-export const FooterDataInfo = [
-  {
-    icon: <IoIosFootball />,
-    text: "hello@littlelearners.com",
-  },
-  {
-    icon: <IoIosFootball />,
-    text: "+91 91813 23 2309",
-  },
-  {
-    icon: <IoIosFootball />,
-    text: "Somewhere in the World",
-  },
-];

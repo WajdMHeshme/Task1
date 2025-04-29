@@ -1,6 +1,7 @@
 import TopNav from "./topNav/TopNav";
 import MainNav from "./mainNav/MainNav";
 import { GoArrowRight } from "react-icons/go";
+import logo from '/assets/shape-14.svg';
 import './Header.css'
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         text={"Admission is Open, Grab your seat now"}
         icon={<GoArrowRight />}
       />
-      <MainNav logo={"/assets/shape-14.svg"} logoTitle={"Little learners"} />
+      <MainNav logo={logo} logoTitle={"Little learners"} />
     </header>
   );
 };

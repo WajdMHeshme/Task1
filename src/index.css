@@ -29,7 +29,8 @@ body {
 }
 
 .container {
-  width: 88.8889%;
+  /* width: ٨٢.٨١٢٥ */
+  width: 82.8125%;
   margin: auto;
 }
 
@@ -37,6 +38,13 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+
+@media screen and (max-width:1919px) {
+  .container {
+    width: 88.888%;
+  }
+}
 
 
 @media screen and (max-width:426px) {

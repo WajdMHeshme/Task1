@@ -66,7 +66,10 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 485px) {
+    .topNav {
+        margin: 18px 16px !important;
+    }
     .topNav p {
         font-size: 14px;
     }
@@ -89,5 +92,11 @@
         width: 48.6px;
         right: -8px;
         transform: rotate(-32deg);
+    }
+}
+
+@media screen and (max-width:1919px) {
+    .topNav {
+        height: 52px;
     }
 }

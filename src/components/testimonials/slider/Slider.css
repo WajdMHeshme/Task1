@@ -20,13 +20,14 @@
 
 
 .card {
-    height: 400px;
     background: #fff;
-    padding: 30px;
+    width: 88.9%;
+    padding: 50px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 4px 4px 0px 1px #1E1E1E;
     border: 2px solid var(--border-color);
+    height: 462px;
 }
 
 .avatar {
@@ -76,6 +77,13 @@ span.star {
 
 }
 
+@media screen and (max-width:1919px) {
+    .testimonial-text {
+        font-size: 16px !important
+    }
+
+}
+
 @media screen and (min-width: 992px) {
     .arrow {
         position: absolute;
@@ -96,8 +104,16 @@ span.star {
     }
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:645px) {
     .card {
-        height: 464px;
+        width: 100%;
+        height: auto;
     }
+}
+
+@media screen and (max-width:490px) {
+    .slide {
+        padding: 8px;
+    }
+
 }
